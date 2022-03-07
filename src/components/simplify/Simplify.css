@@ -1,0 +1,61 @@
+.simplify {
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    background-color: var(--Bright-Red);
+    justify-content: center;
+    height: 300px;
+    background-image: url('../../../public/images/bg-simplify-section-desktop.svg');
+    background-repeat: no-repeat;
+}
+
+.simplify-container {
+    width: 80%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.simplify-container h3 {
+    color: white;
+    font-size: 35px;
+    width: 50%;
+}
+
+.btn-reverse {
+    background-color: white;
+    color: var(--Bright-Red);
+    padding: 15px 35px;
+    border-radius: 35px;
+    width: 150px;
+}
+
+.btn-reverse:hover {
+    background-color: var(--Bright-Red);
+    border: 1px white solid;
+    color: white;
+}
+
+.simplify-pattern {
+    position: absolute;
+    width: 1200px;
+}
+
+@media(max-width: 600px) {
+    .simplify {
+        background-image: url('../../../public/images/bg-simplify-section-mobile.svg');
+        background-position: left;
+    }
+
+    .simplify-container {
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .simplify-container h3 {
+        width: 80%;
+        text-align: center;
+        margin-bottom: 30px;
+    }
+
+}

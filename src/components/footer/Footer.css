@@ -1,0 +1,141 @@
+footer {
+    background-color: var(--Very-Dark-Blue);
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 30px 0;
+}
+
+.footer-container {
+    display: flex;
+    justify-content: space-between;
+    width: 80%;
+}
+
+.left-footer img {
+    background-color: white;
+    padding: 10px;
+}
+
+.left-footer {
+    display: flex;
+    flex-direction: column;
+    gap: 200px;
+    align-items: center;
+}
+
+.social-media li a {
+    color: white;
+    font-size: 30px;
+}
+
+.social-media li a:hover {
+    color: var(--Bright-Red);
+}
+
+.social-media {
+    display: flex;
+    gap: 10px;
+}
+
+.middle-footer {
+    display: flex;
+    gap: 100px;
+}
+
+.middle-footer ul {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.middle-footer ul li a {
+    color: white;
+    margin-top: 50px;
+}
+
+.middle-footer ul li a:hover {
+    color: var(--Bright-Red);
+}
+
+.right-footer form input {
+    padding: 10px 40px;
+    border-radius: 30px;
+    border: none;
+}
+
+.right-footer form {
+    display: flex;
+    gap: 10px;
+}
+
+.circle-btn {
+    padding: 10px 20px;
+    border-radius: 20px;
+    background-color: var(--Bright-Red);
+    color: white;
+}
+
+.circle-btn:hover {
+    color: var(--Bright-Red);
+    background-color: white;
+    border: 1px var(--Bright-Red) solid;
+}
+
+.right-footer {
+    display: flex;
+    flex-direction: column;
+    gap: 200px;
+}
+
+.copyright-1 {
+    display: none;
+}
+
+@media(max-width: 1000px) {
+    .footer-container {
+        flex-direction: column-reverse;
+        align-items: center;
+        justify-content: center;
+        gap: 40px;
+        width: 100%;
+    }
+
+    .social-media {
+        width: 100%;
+        align-items: center;
+        justify-content: center;
+        gap: 20px;
+    }
+
+    .social-media li a {
+        font-size: 40px;
+    }
+
+    .middle-footer {
+        width: 60%;
+        align-items: baseline;
+        justify-content: center;
+        justify-content: space-between;
+        gap: 0;
+    }
+
+    .left-footer {
+        gap: 40px;
+        width: 100%;
+        flex-direction: column-reverse;
+    }
+
+    .copyright-2 {
+        display: none;
+    }
+
+    .copyright-1 {
+        display: flex;
+    }
+
+    .right-footer form input {
+        width: 90%;
+    }
+}

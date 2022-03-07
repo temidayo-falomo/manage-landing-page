@@ -1,0 +1,37 @@
+.card {
+    background-color: #FAFAFA;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    border-radius: 5px;
+    padding: 30px 20px;
+    gap: 5px;
+    text-align: center;
+}
+
+.card p {
+    width: 100%;
+}
+
+.avatar {
+    z-index: 11111;
+    border: 5px var(--Bright-Red) solid;
+    border-radius: 100px;
+    width: 100px;
+}
+
+.card-container {
+    gap: 5px;
+    width: 80%;
+}
+
+button.rec-dot{
+    /* background-color: rgb(235, 16, 16); */
+    box-shadow: 0 0 1px 3px rgba(235, 16, 16, 0.5);
+  }
+  
+  button.rec-dot:hover, button.rec-dot:active, button.rec-dot:focus  {
+    box-shadow: 0 0 1px 3px rgba(235,16,16,0.5);
+    background-color: var(--Bright-Red);
+}
